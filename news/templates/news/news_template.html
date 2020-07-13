@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<head>
+	<title>{{ specific_news.title }}</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+	<h2>{{ specific_news.title }}</h2>
+	<p>{{ specific_news.created }}</p>
+	<p>{{ specific_news.text }}</p>
+</body>
+
+<a target="_blank" href="/news/">News Page</a>
